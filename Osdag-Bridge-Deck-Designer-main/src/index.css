@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    /* Green and White Theme - Light Mode */
+    --background: 150 20% 98%;
+    --foreground: 142 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 142 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 30% 12%;
+
+    /* Primary - Deep Green */
+    --primary: 142 76% 36%;
+    --primary-foreground: 150 20% 98%;
+
+    /* Secondary - Light Green Mint */
+    --secondary: 150 30% 92%;
+    --secondary-foreground: 142 30% 20%;
+
+    /* Muted - Soft Green-Grey */
+    --muted: 150 20% 94%;
+    --muted-foreground: 142 15% 45%;
+
+    /* Accent - Vibrant Green */
+    --accent: 142 50% 45%;
+    --accent-foreground: 150 20% 98%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - For location values display */
+    --success: 142 70% 35%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Orange for validation */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Info */
+    --info: 210 80% 50%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 142 20% 85%;
+    --input: 142 20% 88%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Deep Green */
+    --sidebar-background: 142 25% 18%;
+    --sidebar-foreground: 150 20% 95%;
+    --sidebar-primary: 150 50% 60%;
+    --sidebar-primary-foreground: 142 30% 10%;
+    --sidebar-accent: 142 30% 25%;
+    --sidebar-accent-foreground: 150 20% 95%;
+    --sidebar-border: 142 20% 30%;
+    --sidebar-ring: 150 50% 60%;
+
+    /* Custom tokens */
+    --header-bg: 142 25% 18%;
+    --header-foreground: 150 20% 98%;
+    --section-header: 142 76% 36%;
+    --input-focus: 142 76% 40%;
+    --tab-active: 142 76% 36%;
+    --tab-inactive: 142 20% 75%;
+  }
+
+  .dark {
+    --background: 150 20% 10%;
+    --foreground: 142 20% 95%;
+
+    --card: 150 20% 14%;
+    --card-foreground: 142 20% 95%;
+
+    --popover: 150 20% 14%;
+    --popover-foreground: 142 20% 95%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 20%;
+    --secondary-foreground: 142 20% 90%;
+
+    --muted: 150 15% 18%;
+    --muted-foreground: 142 15% 60%;
+
+    --accent: 142 40% 45%;
+    --accent-foreground: 150 30% 10%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 85% 55%;
+    --warning-foreground: 0 0% 0%;
+
+    --info: 210 70% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 150 15% 25%;
+    --input: 150 15% 22%;
+    --ring: 142 50% 55%;
+
+    --sidebar-background: 150 25% 8%;
+    --sidebar-foreground: 142 20% 95%;
+    --sidebar-primary: 142 50% 55%;
+    --sidebar-primary-foreground: 150 30% 10%;
+    --sidebar-accent: 150 20% 15%;
+    --sidebar-accent-foreground: 142 20% 95%;
+    --sidebar-border: 150 15% 20%;
+    --sidebar-ring: 142 50% 55%;
+
+    --header-bg: 150 25% 12%;
+    --header-foreground: 142 20% 98%;
+    --section-header: 142 50% 55%;
+    --input-focus: 142 50% 50%;
+    --tab-active: 142 50% 55%;
+    --tab-inactive: 150 15% 35%;
+  }
+  .high-contrast {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 0%;
+    
+    --accent: 0 0% 0%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 0% 0%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 0 0% 0%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 0 0% 0%;
+    --warning-foreground: 0 0% 100%;
+    
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+    
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    
+    --header-bg: 0 0% 0%;
+    --header-foreground: 0 0% 100%;
+  }
+
+  .high-contrast * {
+    border-width: 1px !important;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-header {
+    @apply bg-primary text-primary-foreground px-4 py-2 font-semibold text-sm rounded-t-md;
+  }
+
+  .input-group {
+    @apply bg-card border border-border rounded-md shadow-sm;
+  }
+
+  .form-label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .value-display {
+    @apply text-success font-mono text-sm font-medium;
+  }
+
+  .error-text {
+    @apply text-destructive text-xs mt-1;
+  }
+
+  .tab-button {
+    @apply px-4 py-2 text-sm font-medium transition-colors rounded-t-md;
+  }
+
+  .tab-button-active {
+    @apply bg-tab-active text-primary-foreground;
+  }
+
+  .tab-button-inactive {
+    @apply bg-tab-inactive text-muted-foreground hover:bg-muted;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary) / 0.3) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary) / 0.3);
+    border-radius: 3px;
+  }
+}
