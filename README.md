@@ -61,7 +61,7 @@ Ensure you have the following installed:
    ```bash
    git clone [https://github.com/irajverma/Osdag-Bridge-Deck-Designer.git](https://github.com/irajverma/Osdag-Bridge-Deck-Designer.git)
    cd Osdag-Bridge-Deck-Designer
-Install dependencies:
+## Install dependencies:
 
 Bash
 npm install
@@ -72,19 +72,20 @@ npm run dev
 📦 Build & Deploy
 To create a production-ready build and deploy it to Firebase:
 
-Create the production build:
+## Create the production build:
 
 Bash
 npm run build
 Deploy to Firebase Hosting:
 
-Bash
+# Bash
 firebase deploy --only hosting
-🤝 Contributing
+
+## 🤝 Contributing
 Contributions, issues, and feature requests are always welcome!
 Feel free to check the issues page if you want to contribute. If you'd like to make a major change, please open an issue first to discuss what you would like to change.
 
-Fork the Project
+## Fork the Project
 
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 
@@ -94,5 +95,5 @@ Push to the Branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📄 License
-This project is part of the FOSSEE project at IIT Bombay.(Consider adding a specific license file to your repo, like MIT or GPL, and linking it here: [MIT License](LICENSE))
+## 📄 License
+This project is part of the FOSSEE project at IIT Bombay.
