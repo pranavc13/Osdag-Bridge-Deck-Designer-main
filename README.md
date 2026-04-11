@@ -78,7 +78,7 @@ Bash
 npm run build
 Deploy to Firebase Hosting:
 
-# Bash
+ Bash
 firebase deploy --only hosting
 
 ## 🤝 Contributing
