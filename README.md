@@ -7,7 +7,7 @@
 
 A powerful, interactive web-based tool for designing and visualizing steel-concrete composite bridge decks. Developed as part of the **FOSSEE Osdag Project** at IIT Bombay.
 
-🚀 **[View Live Demo Here](#)** *(Replace with your Firebase deployment link)*
+
 
 ---
 
