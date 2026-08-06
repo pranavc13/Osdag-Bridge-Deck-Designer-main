@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Language } from '@/lib/i18n';
-
 interface AppContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
