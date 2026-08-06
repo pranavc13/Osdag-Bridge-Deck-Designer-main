@@ -13,7 +13,6 @@ interface AppContextType {
   highContrast: boolean;
   setHighContrast: (enabled: boolean) => void;
 }
-
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
