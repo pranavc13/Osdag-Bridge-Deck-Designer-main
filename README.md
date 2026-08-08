@@ -96,4 +96,4 @@ Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 ## 📄 License
-This project is part of the FOSSEE project at IIT Bombay.
+This project is part of the FOSSEE project for IIT Bombay!
